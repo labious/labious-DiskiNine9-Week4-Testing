@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Diski Nine9</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+<script src="https://kit.fontawesome.com/310dfb5b04.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./dist/css/splide.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/css/splide.min.css'>
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no" >
+  <!-- ***************************** Desktop Only ************************ -->
+  <div class="header-scroll">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container" id="nav-wrapper">
+        <a id="logo-container" href="index.html" class="brand-logo">
+          <img width="130px" class=" responsive-img" id="logo-image" src="./img/logo-main.jpg" alt="" srcset="">
+        </a>
+        <ul class="right hide-on-small-only " id="nav-links">
+            <li><a href="index.html">Home</a></li>
+          
+            <li id="feedback-box"><a href="About.html">About</a></li>
+
+            <li class="" id="Programmes-menu-box">
+              <a href="programmes.html" class="  desktop-item">Programmes</a>
+            </li>
+
+            <li class="" id="dropdown-menu-box">
+              <a href="impact.html" class="desktop-item">Impact</a>
+            </li>
+
+            <li id="Contact-box">
+              <a href="./contact.html" class="desktop-item">Contact</a>
+            </li>
+            <li id="Galery-box"><a href="#" class="desktop-item">Galery</a></li>
+            <li><a href=" " id="download-button" class="btn-small  red lighten-1 ">Donate</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="sidenav">
+          <a href="#">
+          <img width="40px" class="circle hide-on-large-only responsive-img" id="logo-image-mobile-nav" src="./img/logo2.png" alt="" srcset="">   
+          </a>
+          <div class="mob-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Galery</a></li>
+            <li><a href=" " id="download-button" class="btn-small  red ">Donate</a></li>
+            <div class="socials">
+              <i class="fab fa-facebook  fa-2x"></i>
+
+              <i class="fab fa-linkedin fa-2x"></i>
+
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </div>
+          </div>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- *****************************Hero Slide ************************ -->
+  <div id="overlay">
+    <div id="index-banner" class="   parallax-container ">
+      <div id="splide">
+        <div class="splide__track" id="splide-track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img height="660px" width="100%"  srcset="./img/42_small.jpg 375w,./img/42_b.jpg 1500w" src="" alt="">
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%" srcset="./img/IMG_8188_small.JPG 375w,./img/IMG_8188.JPG  1500w" src="" alt="">
+              <!-- <img height="660px" width="100%" src="./img/IMG_8188.JPG" alt=""> -->
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%"  srcset="./img/IMG_9426_small.jpg 500w,./img/IMG_9426.jpg  900w" src="" alt="">
+              <!-- <img height="100%" width="100%" src="./img/IMG_9426a.jpg" alt=""> -->
+            </li>
+            <li class="splide__slide">
+              <img height="660px" width="100%" src="./img/new Stock/D.jpg" alt="">
+            </li>
+          </ul> 
+        </div> 
+      </div>   
+    </div> <!-- End of Hero Slide  -->
+  </div>
+  
+  <!-- Hero Text -->
+  <div class="section hero-text ">
+    <div class="container hero-text-inner">
+       <div class="row center ">
+        <h1 class="header  white-text text-darken-4"> Welcome <span class="break"> to  </span> <span class="break"> Diski Nine9 </span> </h1>
+        <h5 class="header col s12 light">The birthplace of football development in rural, township and urban areas of South Africa.</h5>
+      </div> 
+      <div class="row center">
+        <a href="#modal1" id="action-button" class="btn-large waves-effect waves-light red modal-trigger  lighten-1">Get involved</a>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Join Us</h4>
+            <p>Become a donor</p>
+            <p>Become a volunteer</p>
+            <p>Careers</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">CLOSE</a>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div> <!-- End of Hero Text -->
+
+  <!-- This will be an Animation Pane -->
+  <div class=" catchy">
+    <div class="section">
+      <!-- half cards Desktop-->          
+      <div class="row" id="Work">
+        <div class="col s6 desktop hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/new Stock/23.jpg">
+              <span class="card-title z-depth-1" id="over-img">Celebrate Excellence</span>
+            </div>
+            <div class="card-content">
+              <p>We award excellence</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Website Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 desktop hide-on-med-and-down">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/new Stock/21.jpg">
+              <span class="card-title z-depth-1" id="over-img">We celebrate champions</span>
+            </div>
+            <div class="card-content">
+              <p>Embrace champions</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Website Link</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- half cards Mobile-->          
+    <div class="col s12 low-res hide-on-med-and-up" id="Work">
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/new Stock/23.jpg">
+          <span class="card-title z-depth-1" id="over-img">Celebrate Excellence</span>
+        </div>
+        <div class="card-content">
+          <p>We award excellence</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Website Link</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 low-res hide-on-med-and-up">
+      <div class="card">
+        <div class="card-image">
+          <img src="./img/new Stock/21.jpg">
+          <span class="card-title z-depth-1" id="over-img">We celebrate champions</span>
+        </div>
+        <div class="card-content">
+          <p>Embrace champions</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div> <!-- End of Animation Pane -->
+
+  <!-- Explainer -->
+  <section class="red">
+    <div class="container ">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>What we do</h4>
+            <p class="left-align light">In response to social ills that have negative effects in underprivileged communities, Co-founders, Raymond Ledwaba and Phehello Monamodi established Diski Nine9 as a way to change the narrative by providing youths from Soweto with a platform to play sports in a safe place and realise their talents to become better professionals, leaders and role models in their communities. The following are the Programmes we use to counteract these social ills</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of Explainer -->
+  </section>
+
+  <!-- Parallax -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Our Vision is to identify and nurture the next generation of responsible</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/IMG_9300.jpg" alt="Unsplashed background img 3"></div>
+  </div> <!-- End of Parallax -->
+
+
+  <!-- Desktop Footer -->
+  <footer class="page-footer maroon hide-on-small-only">
+      <div class="row">
+        <div class="col  s6">
+          <h5 class="white-text">Diski Nine9</h5>
+          <p class="grey-text text-lighten-4">Diski Nine9 Africa is a registered non-profit company based in Soweto, South Africa (Reg no: 2015/447508/08). Diski Nine9 was formed in 2015 and our objective is to use sport, notably soccer and netball as a tool to educate and empower young Africans. “Diski” is a slang term used in South Africa to describe the biggest and most loved sport around the world – Soccer. “Nine9” is a slang term meaning Authentic or Real.</p>
+          <div class="socials">
+            <i class="fab fa-facebook  fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-youtube-square fa-2x"></i>
+          </div>
+        </div>
+        <div class="col  s2 ">
+          <h5 class="white-text">Explore</h5>
+          <ul class="footer-list">
+            <li><a class="white-text" href="About.html">About</a></li>
+            <li><a class="white-text" href="programmes.html">Programmes</a></li>
+            <li><a class="white-text" href="#!">Galery</a></li>
+            <li><a class="white-text" href="#!">Tournaments</a></li>
+          </ul>
+        </div>
+        <div class="col s2">
+          <h5 class="white-text">Important</h5>
+          <ul class="footer-list">
+            <li><a class="white-text" href="#!">News</a></li>
+            <li><a class="white-text" href="#!">Timeline</a></li>
+            <li><a class="white-text" href="#!">Sports</a></li>
+            <li><a class="white-text" href="#!">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col s2">
+          <h5 class="white-text">Categories</h5>
+          <ul class="footer-list">
+            <li><a class="white-text" href="#!">Diski / Soccer</a></li>
+            <li><a class="white-text" href="#!">Netball</a></li>
+            <li><a class="white-text" href="#!">E-Sports</a></li>
+            <li><a class="white-text" href="#!">Tournaments</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    <div class="footer-copyright">
+      Copyright 2019 DiskiNine9. All rights reserved 
+      <a href="index.html">Home</a>
+
+    </div>
+  </footer> <!-- End of Desktop Footer -->
+
+  <!-- Mobile Footer -->
+  <footer class="page-footer maroon hide-on-med-and-up">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Diski Nine9</h5>
+          <p class="grey-text text-lighten-4">Diski Nine9 Africa is a registered non-profit company based in Soweto, South Africa (Reg no: 2015/447508/08). Diski Nine9 was formed in 2015 and our objective is to use sport, notably soccer and netball as a tool to educate and empower young Africans. “Diski” is a slang term used in South Africa to describe the biggest and most loved sport around the world – Soccer. “Nine9” is a slang term meaning Authentic or Real.</p>
+          <div class="socials">
+            <i class="fab fa-facebook  fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-youtube-square fa-2x"></i>
+          </div>
+        </div>
+        <div class="col l3 s12">
+           <h5 class="white-text">Explore</h5>
+          <ul class="mobile-footer-list">
+            <li><a class="white-text" href="About.html">About</a></li>
+            <li><a class="white-text" href="#!">Programmes</a></li>
+            <li><a class="white-text" href="#!">Galery</a></li>
+            <li><a class="white-text" href="#!">Tournaments</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Important</h5>
+          <ul class="mobile-footer-list">
+            <li><a class="white-text" href="#!">News</a></li>
+            <li><a class="white-text" href="#!">Timeline</a></li>
+            <li><a class="white-text" href="#!">Sports</a></li>
+            <li><a class="white-text" href="#!">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Categories</h5>
+          <ul class="mobile-footer-list">
+            <li><a class="white-text" href="#!">Diski / Soccer</a></li>
+            <li><a class="white-text" href="#!">Netball</a></li>
+            <li><a class="white-text" href="#!">E-Sports</a></li>
+            <li><a class="white-text" href="#!">Tournaments</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+    <hr>
+    <div class="footer-copyright">
+      Copyright 2019 DiskiNine9. All rights reserved 
+      <a href="index.html">Home</a>
+    </div>
+  </footer> <!-- End of Mobile Footer -->
+  <!--  Scripts-->
+<script src="./dist/js/splide.min.js"></script>
+  <script src="js/init.js"></script>
+<script src="js/materialize.js"></script> 
+
+<script>
+
+//Modal function
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+</script> 
+<script>
+  setInterval(function(){
+   $( "input" ).trigger("click");
+},random(3000,4000));
+
+function random(min,max){
+   return min + (max - min) * Math.random()
+} 
+</script>
+
+<script id="rendered-js" >
+  // SplideJS Slider. See full docs at:
+  // https://splidejs.com/
+  document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('#splide', {
+      type: 'loop',
+      perPage: 1,
+      autoplay: true,
+      arrows : false,
+      interval: 4000, // How long to display each slide
+      pauseOnHover: false, // must be false
+      pauseOnFocus: false, // must be false
+      resetProgress: false }).
+    mount();
+  
+    var button = document.querySelector('.splide__play-pause');
+  
+    if (button) {
+      var pausedClass = 'is-paused';
+  
+      // Remove the paused class and change the label to "Pause".
+      splide.on('autoplay:play', function () {
+        button.classList.remove(pausedClass);
+        button.textContent = 'Pause';
+        button.setAttribute('aria-label', 'Pause Autoplay');
+      });
+  
+      // Add the paused class and change the label to "Play".
+      splide.on('autoplay:pause', function () {
+        button.classList.add(pausedClass);
+        button.textContent = 'Play';
+        button.setAttribute('aria-label', 'Start Autoplay');
+      });
+  
+      // Toggle play/pause when the button is clicked.
+      splide.on('click', function () {
+        var flag = 99;
+        var Autoplay = splide.Components.Autoplay;
+  
+        if (button.classList.contains(pausedClass)) {
+          Autoplay.play(flag);
+        } else {
+          Autoplay.pause(flag);
+        }
+      }, button);
+    }
+  });
+      </script>
+  
+
+  </body>
+</html>
